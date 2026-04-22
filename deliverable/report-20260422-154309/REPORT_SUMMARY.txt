@@ -1,0 +1,3 @@
+Generated At: 2026-04-22 15:43:09
+Workspace: C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2
+Included: playwright-report, junit-report.xml, json-report.json

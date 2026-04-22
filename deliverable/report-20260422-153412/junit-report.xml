@@ -1,0 +1,200 @@
+<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="3" time="70.07348999999999">
+<testsuite name="ui\auto-3-login.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.367" errors="0">
+<testcase name="Auto-3: Login › Verify user can successfully log in" classname="ui\auto-3-login.spec.ts" time="6.367">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-4-create-product.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.577" errors="0">
+<testcase name="Auto-4: Create Product › Verify admin can create a product with valid mandatory information" classname="ui\auto-4-create-product.spec.ts" time="7.577">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-5-add-to-cart.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="66.377" errors="1">
+<testcase name="Auto-5: Add to Cart › Verify shopper can add one product to cart from product listing" classname="ui\auto-5-add-to-cart.spec.ts" time="66.377">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\video.webm]]
+
+[[ATTACHMENT|ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\error-context.md]]
+
+[[ATTACHMENT|ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › ui\auto-5-add-to-cart.spec.ts:11:7 › Auto-5: Add to Cart › Verify shopper can add one product to cart from product listing 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.waitForLoadState: Test timeout of 60000ms exceeded.
+
+       at ..\pageobjects\login-page.ts:35
+
+      33 |       // Wait for login to complete and redirect away from login page
+      34 |       await this.page.waitForURL((url) => !url.pathname.includes('/login') && url.pathname !== '/', { timeout: 15000 }).catch(() => {});
+    > 35 |       await this.page.waitForLoadState('networkidle');
+         |                       ^
+      36 |       return;
+      37 |     }
+      38 |
+        at LoginPage.clickLogin (C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2\pageobjects\login-page.ts:35:23)
+        at LoginPage.login (C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2\pageobjects\login-page.ts:53:5)
+        at C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2\tests\ui\auto-5-add-to-cart.spec.ts:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-6-cart-quantity.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="67.11" errors="1">
+<testcase name="Auto-6: Cart Quantity Update › Verify increasing item quantity recalculates line total and cart total correctly" classname="ui\auto-6-cart-quantity.spec.ts" time="67.11">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\video.webm]]
+
+[[ATTACHMENT|ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\error-context.md]]
+
+[[ATTACHMENT|ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="Test timeout of 60000ms exceeded." type="Error">
+<![CDATA[  [chromium] › ui\auto-6-cart-quantity.spec.ts:11:7 › Auto-6: Cart Quantity Update › Verify increasing item quantity recalculates line total and cart total correctly 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: page.waitForLoadState: Test timeout of 60000ms exceeded.
+
+       at ..\pageobjects\login-page.ts:35
+
+      33 |       // Wait for login to complete and redirect away from login page
+      34 |       await this.page.waitForURL((url) => !url.pathname.includes('/login') && url.pathname !== '/', { timeout: 15000 }).catch(() => {});
+    > 35 |       await this.page.waitForLoadState('networkidle');
+         |                       ^
+      36 |       return;
+      37 |     }
+      38 |
+        at LoginPage.clickLogin (C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2\pageobjects\login-page.ts:35:23)
+        at LoginPage.login (C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2\pageobjects\login-page.ts:53:5)
+        at C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2\tests\ui\auto-6-cart-quantity.spec.ts:20:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\ui-auto-6-cart-quantity-Au-34d40-al-and-cart-total-correctly-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-7-checkout-cod.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.53" errors="0">
+<testcase name="Auto-7: Checkout COD › Verify shopper can complete checkout using valid shipping info and COD payment" classname="ui\auto-7-checkout-cod.spec.ts" time="10.53">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-8-checkout-card.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="34.169" errors="1">
+<testcase name="Auto-8: Checkout Card Payment › Verify shopper can complete checkout using valid card payment flow" classname="ui\auto-8-checkout-card.spec.ts" time="34.169">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\video.webm]]
+
+[[ATTACHMENT|ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\error-context.md]]
+
+[[ATTACHMENT|ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="locator.waitFor: Timeout 15000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › ui\auto-8-checkout-card.spec.ts:14:7 › Auto-8: Checkout Card Payment › Verify shopper can complete checkout using valid card payment flow 
+
+    TimeoutError: locator.waitFor: Timeout 15000ms exceeded.
+    Call log:
+      - waiting for locator('button:has-text("Add to cart"), button:has-text("Thêm vào giỏ")').first() to be visible
+
+
+       at ..\pageobjects\product-list-page.ts:14
+
+      12 |   async navigateTo() {
+      13 |     await this.page.goto('/home', { waitUntil: 'domcontentloaded' });
+    > 14 |     await this.addToCartButtons.first().waitFor({ timeout: 15000 });
+         |                                         ^
+      15 |   }
+      16 |
+      17 |   async addProductToCart(productName: string) {
+        at ProductListPage.navigateTo (C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2\pageobjects\product-list-page.ts:14:41)
+        at C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2\tests\ui\auto-8-checkout-card.spec.ts:25:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\ui-auto-8-checkout-card-Au-a80b2-ing-valid-card-payment-flow-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n1-invalid-password.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.825" errors="0">
+<testcase name="Auto-N1: Login Negative › Verify error message is displayed when password is incorrect" classname="ui\auto-n1-invalid-password.spec.ts" time="3.825">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n2-nonexistent-user.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.466" errors="0">
+<testcase name="Auto-N2: Login Negative › Verify error message for non-existent username without leaking user existence" classname="ui\auto-n2-nonexistent-user.spec.ts" time="2.466">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n3-required-username.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.722" errors="0">
+<testcase name="Auto-N3: Login Negative › Verify required field validation for username" classname="ui\auto-n3-required-username.spec.ts" time="3.722">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n4-required-password.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.992" errors="0">
+<testcase name="Auto-N4: Login Negative › Verify required field validation for password" classname="ui\auto-n4-required-password.spec.ts" time="1.992">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n5-username-case-sensitivity.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.553" errors="0">
+<testcase name="Auto-N5: Login Negative › Verify case sensitivity handling for username field" classname="ui\auto-n5-username-case-sensitivity.spec.ts" time="2.553">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-nav1-cart-subtotal-navigation.spec.ts" timestamp="2026-04-22T08:31:18.853Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.869" errors="0">
+<testcase name="Auto-Nav1: Cart Navigation Persistence › Verify cart subtotal updates correctly when adding multiple different items" classname="ui\auto-nav1-cart-subtotal-navigation.spec.ts" time="4.869">
+</testcase>
+</testsuite>
+</testsuites>
