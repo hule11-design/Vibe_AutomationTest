@@ -4,8 +4,8 @@ declare const process: {
 
 export const users = {
   admin: {
-    username: 'Admin_h4',
-    password: '44444444',
+    username: 'Admin_DemoNotDelete',
+    password: '11111111',
   },
   shopper: {
     username: 'test1',

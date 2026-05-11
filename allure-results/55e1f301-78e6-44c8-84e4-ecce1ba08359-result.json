@@ -1,0 +1,42 @@
+{
+  "uuid": "55e1f301-78e6-44c8-84e4-ecce1ba08359",
+  "historyId": "40629d3e308d29dda968f54ce30e91b3",
+  "name": "Verify shopper can add one product to cart from product listing",
+  "fullName": "ui/auto-5-add-to-cart.spec.ts > Verify shopper can add one product to cart from product listing",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215918262,
+  "stop": 1778215936305,
+  "description": "ui\\auto-5-add-to-cart.spec.ts › Auto-5: Add to Cart",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-5-add-to-cart.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-5: Add to Cart"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

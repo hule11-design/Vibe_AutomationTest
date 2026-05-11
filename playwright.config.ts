@@ -9,7 +9,7 @@ export default defineConfig({
   fullyParallel: false,
   workers: process.env.PW_WORKERS ? Number(process.env.PW_WORKERS) : undefined,
   retries: process.env.CI ? 1 : 0,
-  reporter: [['html', { open: 'never' }], ['list']],
+  reporter: [['html', { open: 'never' }], ['list'], ['allure-playwright']],
   use: {
     baseURL: 'http://192.168.237.15:5173',
     headless: false,

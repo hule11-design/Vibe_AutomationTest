@@ -1,0 +1,96 @@
+<testsuites id="" name="" tests="12" failures="1" skipped="0" errors="0" time="53.928375">
+<testsuite name="ui\auto-3-login.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="20.827" errors="0">
+<testcase name="Auto-3: Login › Verify user can successfully log in" classname="ui\auto-3-login.spec.ts" time="20.827">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-4-create-product.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="27.201" errors="0">
+<testcase name="Auto-4: Create Product › Verify admin can create a product with valid mandatory information" classname="ui\auto-4-create-product.spec.ts" time="27.201">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-5-add-to-cart.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="1" skipped="0" time="35.498" errors="0">
+<testcase name="Auto-5: Add to Cart › Verify shopper can add one product to cart from product listing" classname="ui\auto-5-add-to-cart.spec.ts" time="35.498">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\video.webm]]
+
+[[ATTACHMENT|ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\error-context.md]]
+
+[[ATTACHMENT|ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(received).toBeTruthy()" type="expect.toBeTruthy">
+<![CDATA[  [chromium] › ui\auto-5-add-to-cart.spec.ts:11:7 › Auto-5: Add to Cart › Verify shopper can add one product to cart from product listing 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      31 |       // Verify 1: Product appears in cart
+      32 |       const isInCart = await cartPage.isProductInCart(products.sku1001.name);
+    > 33 |       expect(isInCart).toBeTruthy();
+         |                        ^
+      34 |
+      35 |       // Verify 2: Quantity is set to 1
+      36 |       const qty = await cartPage.getProductQuantity();
+        at C:\Users\huyen.lethi\Project\Vibe_Automation\Vibe_Auto2 - Backup4\tests\ui\auto-5-add-to-cart.spec.ts:33:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\ui-auto-5-add-to-cart-Auto-77a0f-o-cart-from-product-listing-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-6-cart-quantity.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="26.357" errors="0">
+<testcase name="Auto-6: Cart Quantity Update › Verify increasing item quantity recalculates line total and cart total correctly" classname="ui\auto-6-cart-quantity.spec.ts" time="26.357">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-7-checkout-cod.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="18.641" errors="0">
+<testcase name="Auto-7: Checkout COD › Verify shopper can complete checkout using valid shipping info and COD payment" classname="ui\auto-7-checkout-cod.spec.ts" time="18.641">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-8-checkout-card.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="17.635" errors="0">
+<testcase name="Auto-8: Checkout Card Payment › Verify shopper can complete checkout using valid card payment flow" classname="ui\auto-8-checkout-card.spec.ts" time="17.635">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n1-invalid-password.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.363" errors="0">
+<testcase name="Auto-N1: Login Negative › Verify error message is displayed when password is incorrect" classname="ui\auto-n1-invalid-password.spec.ts" time="3.363">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n2-nonexistent-user.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.434" errors="0">
+<testcase name="Auto-N2: Login Negative › Verify error message for non-existent username without leaking user existence" classname="ui\auto-n2-nonexistent-user.spec.ts" time="3.434">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n3-required-username.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.068" errors="0">
+<testcase name="Auto-N3: Login Negative › Verify required field validation for username" classname="ui\auto-n3-required-username.spec.ts" time="3.068">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n4-required-password.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.259" errors="0">
+<testcase name="Auto-N4: Login Negative › Verify required field validation for password" classname="ui\auto-n4-required-password.spec.ts" time="3.259">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n5-username-case-sensitivity.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.748" errors="0">
+<testcase name="Auto-N5: Login Negative › Verify case sensitivity handling for username field" classname="ui\auto-n5-username-case-sensitivity.spec.ts" time="3.748">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-nav1-cart-subtotal-navigation.spec.ts" timestamp="2026-05-07T01:30:54.753Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.052" errors="0">
+<testcase name="Auto-Nav1: Cart Navigation Persistence › Verify cart subtotal updates correctly when adding multiple different items" classname="ui\auto-nav1-cart-subtotal-navigation.spec.ts" time="10.052">
+</testcase>
+</testsuite>
+</testsuites>

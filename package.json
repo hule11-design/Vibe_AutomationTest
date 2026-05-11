@@ -1,6 +1,9 @@
 {
   "devDependencies": {
     "@playwright/test": "^1.59.1",
+    "allure-commandline": "^2.23.0",
+    "allure-playwright": "^2.0.0",
+    "docx": "^9.6.1",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3",
     "xlsx": "^0.18.5"
@@ -31,8 +34,20 @@
     "test:report:junit": "powershell -Command \"$env:PLAYWRIGHT_JUNIT_OUTPUT_NAME='test-results/junit-report.xml'; npx playwright test --reporter=list,junit\"",
     "test:report:json": "powershell -Command \"$env:PLAYWRIGHT_JSON_OUTPUT_NAME='test-results/json-report.json'; npx playwright test --reporter=list,json\"",
     "test:report:all": "powershell -Command \"$env:PLAYWRIGHT_JUNIT_OUTPUT_NAME='junit-report.xml'; $env:PLAYWRIGHT_JUNIT_OUTPUT_DIR='test-results'; $env:PLAYWRIGHT_JSON_OUTPUT_NAME='json-report.json'; $env:PLAYWRIGHT_JSON_OUTPUT_DIR='test-results'; npx playwright test --project=chromium --workers=4 --reporter=list,html,junit,json\"",
+    "report:chart": "node scripts/generate-chart-report.js",
+    "report:advanced": "node scripts/generate-advanced-dashboard.js",
+    "report:ultra": "node scripts/generate-ultra-dashboard.js",
+    "report:docx": "node scripts/generate-client-docx-report.js",
+    "test:allure": "powershell -Command \"$env:ALLURE_RESULTS_DIR='allure-results'; $env:PLAYWRIGHT_JSON_OUTPUT_NAME='json-report.json'; $env:PLAYWRIGHT_JSON_OUTPUT_DIR='test-results'; npx playwright test --project=chromium --reporter=list,allure-playwright\"",
+    "allure:convert": "node scripts/convert-to-allure-results.js",
+    "allure:convert:deliverable": "node scripts/convert-to-allure-results.js deliverable/report-20260506-100925",
+    "allure:generate": "npx allure generate allure-results -o allure-report --clean --single-file && node scripts/postprocess-allure-report.js allure-report allure-results",
+    "allure:open": "npx allure open allure-report",
+    "allure:latest": "node scripts/convert-to-allure-results.js test-results && npm run allure:generate && npm run allure:open",
+    "allure:report": "npm run allure:convert && npm run allure:generate && npm run allure:open",
     "report:deliverable": "powershell -ExecutionPolicy Bypass -File scripts/package-reports.ps1",
-    "test:deliverable": "npm run test:report:all && npm run report:deliverable"
+    "report:deliverable:allure": "powershell -ExecutionPolicy Bypass -File scripts/build-deliverable-allure.ps1",
+    "test:deliverable": "npm run test:report:all && npm run report:deliverable:allure"
   },
   "keywords": [],
   "author": "",

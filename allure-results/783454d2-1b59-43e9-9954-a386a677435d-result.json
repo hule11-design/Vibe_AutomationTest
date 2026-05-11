@@ -1,0 +1,42 @@
+{
+  "uuid": "783454d2-1b59-43e9-9954-a386a677435d",
+  "historyId": "87e230fa6ecf4e7ef670da32cd791894",
+  "name": "Verify error message is displayed when password is incorrect",
+  "fullName": "ui/auto-n1-invalid-password.spec.ts > Verify error message is displayed when password is incorrect",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215934712,
+  "stop": 1778215939908,
+  "description": "ui\\auto-n1-invalid-password.spec.ts › Auto-N1: Login Negative",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-n1-invalid-password.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-N1: Login Negative"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

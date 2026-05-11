@@ -1,0 +1,42 @@
+{
+  "uuid": "1b863430-66c8-4fe5-ac0b-9d1e7920d82f",
+  "historyId": "a7f77785d303bea94c55b2f3705b78ed",
+  "name": "Verify user can successfully log in",
+  "fullName": "ui/auto-3-login.spec.ts > Verify user can successfully log in",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215918258,
+  "stop": 1778215925254,
+  "description": "ui\\auto-3-login.spec.ts › Auto-3: Login",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-3-login.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-3: Login"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

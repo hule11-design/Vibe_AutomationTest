@@ -1,0 +1,42 @@
+{
+  "uuid": "1ebd5378-f833-47f3-af05-17ef87271daf",
+  "historyId": "2408f60e8847cf155430957f440266ff",
+  "name": "Verify case sensitivity handling for username field",
+  "fullName": "ui/auto-n5-username-case-sensitivity.spec.ts > Verify case sensitivity handling for username field",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215945460,
+  "stop": 1778215952617,
+  "description": "ui\\auto-n5-username-case-sensitivity.spec.ts › Auto-N5: Login Negative",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-n5-username-case-sensitivity.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-N5: Login Negative"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

@@ -1,0 +1,42 @@
+{
+  "uuid": "8b3c75f1-c22e-4e5e-b2b1-be04341a7614",
+  "historyId": "6209d456c919cedccbe9ef5981f42e94",
+  "name": "Verify required field validation for username",
+  "fullName": "ui/auto-n3-required-username.spec.ts > Verify required field validation for username",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215939995,
+  "stop": 1778215946009,
+  "description": "ui\\auto-n3-required-username.spec.ts › Auto-N3: Login Negative",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-n3-required-username.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-N3: Login Negative"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

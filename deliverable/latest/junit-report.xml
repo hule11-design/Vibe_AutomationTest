@@ -1,0 +1,50 @@
+<testsuites id="" name="" tests="12" failures="0" skipped="0" errors="0" time="40.731266">
+<testsuite name="ui\auto-3-login.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.996" errors="0">
+<testcase name="Auto-3: Login › Verify user can successfully log in" classname="ui\auto-3-login.spec.ts" time="6.996">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-4-create-product.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.502" errors="0">
+<testcase name="Auto-4: Create Product › Verify admin can create a product with valid mandatory information" classname="ui\auto-4-create-product.spec.ts" time="13.502">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-5-add-to-cart.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="18.043" errors="0">
+<testcase name="Auto-5: Add to Cart › Verify shopper can add one product to cart from product listing" classname="ui\auto-5-add-to-cart.spec.ts" time="18.043">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-6-cart-quantity.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="37.629" errors="0">
+<testcase name="Auto-6: Cart Quantity Update › Verify increasing item quantity recalculates line total and cart total correctly" classname="ui\auto-6-cart-quantity.spec.ts" time="37.629">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-7-checkout-cod.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.373" errors="0">
+<testcase name="Auto-7: Checkout COD › Verify shopper can complete checkout using valid shipping info and COD payment" classname="ui\auto-7-checkout-cod.spec.ts" time="8.373">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-8-checkout-card.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.016" errors="0">
+<testcase name="Auto-8: Checkout Card Payment › Verify shopper can complete checkout using valid card payment flow" classname="ui\auto-8-checkout-card.spec.ts" time="11.016">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n1-invalid-password.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.196" errors="0">
+<testcase name="Auto-N1: Login Negative › Verify error message is displayed when password is incorrect" classname="ui\auto-n1-invalid-password.spec.ts" time="5.196">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n2-nonexistent-user.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.294" errors="0">
+<testcase name="Auto-N2: Login Negative › Verify error message for non-existent username without leaking user existence" classname="ui\auto-n2-nonexistent-user.spec.ts" time="6.294">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n3-required-username.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.014" errors="0">
+<testcase name="Auto-N3: Login Negative › Verify required field validation for username" classname="ui\auto-n3-required-username.spec.ts" time="6.014">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n4-required-password.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.32" errors="0">
+<testcase name="Auto-N4: Login Negative › Verify required field validation for password" classname="ui\auto-n4-required-password.spec.ts" time="8.32">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-n5-username-case-sensitivity.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.157" errors="0">
+<testcase name="Auto-N5: Login Negative › Verify case sensitivity handling for username field" classname="ui\auto-n5-username-case-sensitivity.spec.ts" time="7.157">
+</testcase>
+</testsuite>
+<testsuite name="ui\auto-nav1-cart-subtotal-navigation.spec.ts" timestamp="2026-05-08T04:51:56.881Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.609" errors="0">
+<testcase name="Auto-Nav1: Cart Navigation Persistence › Verify cart subtotal updates correctly when adding multiple different items" classname="ui\auto-nav1-cart-subtotal-navigation.spec.ts" time="9.609">
+</testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,42 @@
+{
+  "uuid": "56026432-cc3b-4d93-bfd2-817624ddde07",
+  "historyId": "1011014d8cc9554dd92725a63fa26f35",
+  "name": "Verify increasing item quantity recalculates line total and cart total correctly",
+  "fullName": "ui/auto-6-cart-quantity.spec.ts > Verify increasing item quantity recalculates line total and cart total correctly",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215918256,
+  "stop": 1778215955885,
+  "description": "ui\\auto-6-cart-quantity.spec.ts › Auto-6: Cart Quantity Update",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-6-cart-quantity.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-6: Cart Quantity Update"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

@@ -1,6 +1,6 @@
 /**
  * Auto-4: Verify admin can create a product with valid mandatory information.
- * Pre-conditions: Admin (Admin_h4/44444444) logged in with valid token; Admin is on Manage Products page
+ * Pre-conditions: Admin (Admin_DemoNotDelete/11111111) logged in with valid token; Admin is on Manage Products page
  * Test Data: base product from products.ts with timestamp-based random name; price: 900000; stock: 2; Tag: Hot
  */
 import { expect } from '@playwright/test';

@@ -1,0 +1,42 @@
+{
+  "uuid": "13f78d9e-cea9-415e-b238-ad9e13966ce8",
+  "historyId": "285407762488943cc32688c2f7755935",
+  "name": "Verify required field validation for password",
+  "fullName": "ui/auto-n4-required-password.spec.ts > Verify required field validation for password",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215943458,
+  "stop": 1778215951778,
+  "description": "ui\\auto-n4-required-password.spec.ts › Auto-N4: Login Negative",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-n4-required-password.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-N4: Login Negative"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

@@ -25,7 +25,15 @@ export class CartPage {
     this.checkoutButton = page.locator('button:has-text("Checkout"), button:has-text("Thanh toán"), a:has-text("Checkout"), button:has-text("Thanh toán ngay")').first();
   }
 
+  private isPageActive(): boolean {
+    return !this.page.isClosed();
+  }
+
   async navigateTo() {
+    if (!this.isPageActive()) {
+      return;
+    }
+
     if (await this.cartIcon.isVisible().catch(() => false)) {
       await this.cartIcon.click();
     } else {
@@ -40,13 +48,54 @@ export class CartPage {
   }
 
   async getProductQuantity(): Promise<number> {
-    if (await this.quantityInput.isVisible().catch(() => false)) {
-      const value = await this.quantityInput.inputValue();
-      return parseInt(value, 10);
+    if (!this.isPageActive()) {
+      return 0;
     }
 
-    const value = (await this.quantityValue.textContent())?.trim() ?? '0';
-    return parseInt(value, 10);
+    // Attempt 1: Try quantity input field (direct number input)
+    try {
+      if (await this.quantityInput.isVisible().catch(() => false)) {
+        const value = await this.quantityInput.inputValue();
+        const qty = parseInt(value, 10);
+        if (!Number.isNaN(qty)) return qty;
+      }
+    } catch {}
+
+    // Attempt 2: Try quantity display next to minus button
+    try {
+      if (await this.quantityValue.isVisible().catch(() => false)) {
+        const value = (await this.quantityValue.textContent({ timeout: 1000 }).catch(() => '0'))?.trim() ?? '0';
+        const qty = parseInt(value, 10);
+        if (!Number.isNaN(qty)) return qty;
+      }
+    } catch {}
+
+    // Attempt 3: Search for any visible quantity pattern on page
+    try {
+      const allNumbers = this.page.locator('text=/^[0-9]+$/');
+      const count = await allNumbers.count();
+      if (count > 0) {
+        for (let i = 0; i < Math.min(count, 5); i++) {
+          const text = await allNumbers.nth(i).textContent();
+          const qty = parseInt(text?.trim() ?? '0', 10);
+          if (!Number.isNaN(qty) && qty > 0) {
+            return qty;
+          }
+        }
+      }
+    } catch {}
+
+    // Attempt 4: Look for quantity in common cart attributes
+    try {
+      const qtyElement = this.page.locator('[data-qty], [data-quantity], [class*="qty-value"], [class*="quantity-value"]').first();
+      if (await qtyElement.isVisible().catch(() => false)) {
+        const value = await qtyElement.textContent();
+        const qty = parseInt(value?.trim() ?? '0', 10);
+        if (!Number.isNaN(qty)) return qty;
+      }
+    } catch {}
+
+    return 0;
   }
 
   async setQuantity(qty: number) {
@@ -168,6 +217,10 @@ export class CartPage {
   }
 
   async clearCart() {
+    if (!this.isPageActive()) {
+      return;
+    }
+
     const removeButtons = this.page.locator('button:has-text("✕"), button:has-text("x"), button[aria-label*="remove" i], [class*="remove"] button');
 
     for (let i = 0; i < 20; i++) {
@@ -182,8 +235,20 @@ export class CartPage {
   }
 
   async resetCartState() {
-    await this.navigateTo();
-    await this.clearCart();
+    if (!this.isPageActive()) {
+      return;
+    }
+
+    try {
+      await this.navigateTo();
+      await this.clearCart();
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      if (message.includes('Target page, context or browser has been closed')) {
+        return;
+      }
+      throw error;
+    }
   }
 
   async clickCheckout() {

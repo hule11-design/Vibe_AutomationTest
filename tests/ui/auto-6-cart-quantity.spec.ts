@@ -27,6 +27,16 @@ test.describe('Auto-6: Cart Quantity Update', () => {
       // Step 1: Open cart page
       await cartPage.navigateTo();
 
+      // Ensure cart has at least one item before validating quantity controls.
+      let cartQty = await cartPage.getTotalQuantityFromHeader();
+      if (cartQty === 0) {
+        await productListPage.navigateTo();
+        await productListPage.addFirstInStockProductToCart();
+        await cartPage.navigateTo();
+        cartQty = await cartPage.getTotalQuantityFromHeader();
+      }
+      expect(cartQty).toBeGreaterThan(0);
+
       // Ensure baseline quantity is 1 so the scenario always validates 1 -> 2.
       await cartPage.setQuantityTo(1);
 
@@ -53,7 +63,7 @@ test.describe('Auto-6: Cart Quantity Update', () => {
       expect(cartTotal).toBeTruthy();
     } finally {
       // Post-condition: Clear cart so this test does not affect later scenarios.
-      await cartPage.resetCartState();
+      await cartPage.resetCartState().catch(() => undefined);
     }
   });
 });

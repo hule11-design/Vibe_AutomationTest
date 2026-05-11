@@ -1,7 +1,7 @@
 /**
  * Auto-3: Verify user can successfully log in
  * Pre-conditions: None
- * Test Data: username: Admin_h4; password: 44444444
+ * Test Data: username: Admin_DemoNotDelete; password: 11111111
  */
 import { expect } from '@playwright/test';
 import { test } from '../../fixtures/pageObjectsFixture';

@@ -1,0 +1,42 @@
+{
+  "uuid": "89a539f2-1b24-4e3d-9ab9-118f88b55749",
+  "historyId": "1a25b260b5a0adc36fe3ae94101a9e71",
+  "name": "Verify shopper can complete checkout using valid card payment flow",
+  "fullName": "ui/auto-8-checkout-card.spec.ts > Verify shopper can complete checkout using valid card payment flow",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215934364,
+  "stop": 1778215945380,
+  "description": "ui\\auto-8-checkout-card.spec.ts › Auto-8: Checkout Card Payment",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-8-checkout-card.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-8: Checkout Card Payment"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

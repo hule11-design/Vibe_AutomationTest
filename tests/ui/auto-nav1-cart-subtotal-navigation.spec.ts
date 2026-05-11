@@ -1,7 +1,7 @@
 /**
  * Auto-Nav1: Verify cart subtotal updates correctly when adding multiple different items.
  * Pre-conditions: Shopper logged in; At least 2 products exist in Product list
- * Test Data: username: Admin_h4; password: 44444444
+ * Test Data: username: Admin_DemoNotDelete; password: 11111111
  */
 import { expect } from '@playwright/test';
 import { test } from '../../fixtures/pageObjectsFixture';
@@ -62,7 +62,7 @@ test.describe('Auto-Nav1: Cart Navigation Persistence', () => {
       expect(subtotalAfterNav).toBe(subtotalBeforeNav);
     } finally {
       // Post-condition: clear cart to avoid affecting subsequent tests.
-      await cartPage.resetCartState();
+      await cartPage.resetCartState().catch(() => undefined);
     }
   });
 });

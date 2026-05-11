@@ -1,0 +1,42 @@
+{
+  "uuid": "eea1171f-6af6-4d9c-92d9-cd181eb7b6be",
+  "historyId": "234eccb02b096d37410b6a6806d4fe39",
+  "name": "Verify cart subtotal updates correctly when adding multiple different items",
+  "fullName": "ui/auto-nav1-cart-subtotal-navigation.spec.ts > Verify cart subtotal updates correctly when adding multiple different items",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215946106,
+  "stop": 1778215955715,
+  "description": "ui\\auto-nav1-cart-subtotal-navigation.spec.ts › Auto-Nav1: Cart Navigation Persistence",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-nav1-cart-subtotal-navigation.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-Nav1: Cart Navigation Persistence"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

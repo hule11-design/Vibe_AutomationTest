@@ -1,0 +1,42 @@
+{
+  "uuid": "4087e217-8e5e-4784-bf8e-e12cd6b0ef3b",
+  "historyId": "695ad785395359c1a001fd2a41cf1d96",
+  "name": "Verify shopper can complete checkout using valid shipping info and COD payment",
+  "fullName": "ui/auto-7-checkout-cod.spec.ts > Verify shopper can complete checkout using valid shipping info and COD payment",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215926151,
+  "stop": 1778215934524,
+  "description": "ui\\auto-7-checkout-cod.spec.ts › Auto-7: Checkout COD",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-7-checkout-cod.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-7: Checkout COD"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}

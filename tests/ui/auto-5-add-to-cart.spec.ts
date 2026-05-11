@@ -37,7 +37,7 @@ test.describe('Auto-5: Add to Cart', () => {
       expect(qty).toBe(1);
     } finally {
       // Post-condition: Clear cart so this test does not affect later scenarios.
-      await cartPage.resetCartState();
+      await cartPage.resetCartState().catch(() => undefined);
     }
   });
 });

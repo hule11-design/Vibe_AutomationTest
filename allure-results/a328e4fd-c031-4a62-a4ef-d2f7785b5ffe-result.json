@@ -1,0 +1,42 @@
+{
+  "uuid": "a328e4fd-c031-4a62-a4ef-d2f7785b5ffe",
+  "historyId": "fe7f78c1e0f129e6681aed9733144119",
+  "name": "Verify admin can create a product with valid mandatory information",
+  "fullName": "ui/auto-4-create-product.spec.ts > Verify admin can create a product with valid mandatory information",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1778215918305,
+  "stop": 1778215931807,
+  "description": "ui\\auto-4-create-product.spec.ts › Auto-4: Create Product",
+  "labels": [
+    {
+      "name": "framework",
+      "value": "Playwright"
+    },
+    {
+      "name": "language",
+      "value": "TypeScript"
+    },
+    {
+      "name": "host",
+      "value": "chromium"
+    },
+    {
+      "name": "parentSuite",
+      "value": "ui\\auto-4-create-product.spec.ts"
+    },
+    {
+      "name": "suite",
+      "value": "Auto-4: Create Product"
+    }
+  ],
+  "links": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "chromium"
+    }
+  ],
+  "attachments": [],
+  "steps": []
+}
